@@ -4,10 +4,9 @@ from mesa.space import MultiGrid
 from random import choice
 
 class Tourist:
-    def __init__(self, unique_id, model, current_location, pos):
+    def __init__(self, unique_id, model, current_location):
         super().__init__(unique_id, model)
         self.current_location= current_location
-        self.pos= pos
 
     def move_to_hotel(self, hotel):
         self.current_location=hotel
