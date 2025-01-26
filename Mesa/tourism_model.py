@@ -24,8 +24,8 @@ class Tourist(mesa.Agent):
 
     def step(self):
         hotel = next(agent for agent in self.model.schedule.agents if isinstance(agent, Hotel)) #define hotel
-        print (f"hi my unique id {str(self.unique_id)}. Here is a try to interact with hotel {self.interact_with_hotel(hotel)}")
-        print(f"the hotel has {hotel.get_customer_list()} cusotmers")
+        print (f"hi my unique id {str(self.unique_id)}. interact with hotel {self.interact_with_hotel(hotel)}")
+        print(f"the hotel has {len(hotel.get_customer_list())} cusotmers")
 
 
 class Hotel(mesa.Agent):
