@@ -8,14 +8,7 @@ class Tourist(mesa.Agent):
 
     def interact_with_business(self, business):
         business_price=business.get_business_cost()   # get business room price
-        
-        
-
         business_customer_list= business.get_customer_list().append(self.unique_id) # get customer line in a string
-
-
-        
-        
         return (f"In total I payed for business {str(business_price)} $.")   # return business total price
 
     def step(self):
