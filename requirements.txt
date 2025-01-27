@@ -2,3 +2,4 @@ pyfunctional
 requests
 tripy
 mesa==2.4.0
+pyproj
